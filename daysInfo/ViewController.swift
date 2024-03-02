@@ -59,8 +59,41 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .white
         
+        view.addSubview(firstLabel)
+        view.addSubview(secondLabel)
+        view.addSubview(datePicker)
+        view.addSubview(buttonCreat)
+        view.addSubview(thirdLabel)
+        
+        firstLabel.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(100)
+            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
+        }
+        
+        secondLabel.snp.makeConstraints{make in
+            make.top.equalTo(firstLabel.snp.top).offset(40)
+            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
+        }
+        
+        datePicker.snp.makeConstraints{make in
+            make.top.equalTo(secondLabel.snp.top).offset(40)
+            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
+        }
+        
+        buttonCreat.snp.makeConstraints { make in
+            make.top.equalTo(datePicker.snp.top).offset(220)
+            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(140)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-140)
+        }
+        
+        thirdLabel.snp.makeConstraints { make in
+            make.top.equalTo(buttonCreat.snp.top).offset(50)
+            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
+        }
     }
-    
-    
 }
 
