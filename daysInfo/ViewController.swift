@@ -57,6 +57,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        datePickerValueChanged(datePicker)
+        
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for:.valueChanged)
+        buttonCreat.addTarget(self, action: #selector(result), for: .touchUpInside)
+        
         view.backgroundColor = .white
         
         view.addSubview(firstLabel)
@@ -94,6 +99,18 @@ class ViewController: UIViewController {
             make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
             make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
         }
+    }
+    
+    @objc func datePickerValueChanged(_ sender: UIDatePicker) {
+        let selectedDate = sender.date
+        let daysDifference = Calendar.current.dateComponents([.day], from: selectedDate, to: Date()).day ?? 0
+        numberOfDays = "\(daysDifference)"
+    }
+    
+    @objc func result() {
+        let labelText = "Ты наслаждаешься жизнью \(numberOfDays) дней "
+        thirdLabel.text = labelText
+        
     }
 }
 
