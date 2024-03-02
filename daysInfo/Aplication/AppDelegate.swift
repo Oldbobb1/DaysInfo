@@ -1,9 +1,8 @@
-//
 //  AppDelegate.swift
+
 //  daysInfo
-//
+
 //  Created by Bobbi R. on 2.03.24.
-//
 
 import UIKit
 
