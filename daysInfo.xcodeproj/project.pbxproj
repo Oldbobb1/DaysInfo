@@ -14,6 +14,7 @@
 		C42838782B931F40009EE204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42838762B931F40009EE204 /* LaunchScreen.storyboard */; };
 		C42838812B932464009EE204 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C42838802B932464009EE204 /* SnapKit */; };
 		C42838832B932464009EE204 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C42838822B932464009EE204 /* SnapKit-Dynamic */; };
+		C42838862B932F10009EE204 /* CreatsElemets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42838852B932F10009EE204 /* CreatsElemets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C42838742B931F40009EE204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C42838772B931F40009EE204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C42838792B931F40009EE204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42838852B932F10009EE204 /* CreatsElemets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatsElemets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				C42838842B932476009EE204 /* Aplication */,
 				C428386F2B931F3F009EE204 /* ViewController.swift */,
+				C42838852B932F10009EE204 /* CreatsElemets.swift */,
 				C42838742B931F40009EE204 /* Assets.xcassets */,
 				C42838762B931F40009EE204 /* LaunchScreen.storyboard */,
 				C42838792B931F40009EE204 /* Info.plist */,
@@ -156,6 +159,7 @@
 				C42838702B931F3F009EE204 /* ViewController.swift in Sources */,
 				C428386C2B931F3F009EE204 /* AppDelegate.swift in Sources */,
 				C428386E2B931F3F009EE204 /* SceneDelegate.swift in Sources */,
+				C42838862B932F10009EE204 /* CreatsElemets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

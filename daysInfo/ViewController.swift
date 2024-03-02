@@ -11,32 +11,9 @@ class ViewController: UIViewController {
     
     private lazy var numberOfDays = ""
     
-    private let firstLabel: UILabel =  {
-        let label = UILabel()
-        label.text = "Радуйся каждому дню!"
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 25)
-        label.textColor = .black
-        return label
-    }()
-    
-    private let secondLabel: UILabel =  {
-        let label = UILabel()
-        label.text = "Выбери cвой день рождения:"
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 18)
-        label.textColor = .black
-        return label
-    }()
-    
-    private let thirdLabel: UILabel =  {
-        let label = UILabel()
-        label.text = "Ты наслаждаешься жизнью дней"
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 18)
-        label.textColor = .black
-        return label
-    }()
+    private let firstLabel = createLabel(text:"Радуйся каждому дню!",fontSize: 25)
+    private let secondLabel = createLabel(text:"Выбери cвой день рождения:",fontSize: 18)
+    private let thirdLabel = createLabel(text:"Ты наслаждаешься жизнью дней",fontSize: 18)
     
     private let datePicker: UIDatePicker = {
         let date = UIDatePicker()
@@ -46,29 +23,25 @@ class ViewController: UIViewController {
         return date
     }()
     
-    private let buttonCreat: UIButton = {
-        let button = UIButton()
-        button.setTitle("Result", for: .normal)
-        button.layer.cornerRadius = 11
-        button.backgroundColor = .systemBlue
-        return button
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        datePickerValueChanged(datePicker)
-        
-        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for:.valueChanged)
-        buttonCreat.addTarget(self, action: #selector(result), for: .touchUpInside)
-        
         view.backgroundColor = .white
+        
+        let button = buttonCreat(setTitle: "Result")
+        button.layer.cornerRadius = 11
+        button.backgroundColor = .systemBlue
         
         view.addSubview(firstLabel)
         view.addSubview(secondLabel)
         view.addSubview(datePicker)
-        view.addSubview(buttonCreat)
+        view.addSubview(button)
         view.addSubview(thirdLabel)
+        
+        datePickerValueChanged(datePicker)
+        
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for:.valueChanged)
+        button.addTarget(self, action: #selector(result), for: .touchUpInside)
         
         firstLabel.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(100)
@@ -88,14 +61,14 @@ class ViewController: UIViewController {
             make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
         }
         
-        buttonCreat.snp.makeConstraints { make in
+        button.snp.makeConstraints { make in
             make.top.equalTo(datePicker.snp.top).offset(220)
             make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(140)
             make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-140)
         }
         
         thirdLabel.snp.makeConstraints { make in
-            make.top.equalTo(buttonCreat.snp.top).offset(50)
+            make.top.equalTo(button.snp.top).offset(50)
             make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
             make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
         }
@@ -110,7 +83,6 @@ class ViewController: UIViewController {
     @objc func result() {
         let labelText = "Ты наслаждаешься жизнью \(numberOfDays) дней "
         thirdLabel.text = labelText
-        
     }
 }
 
