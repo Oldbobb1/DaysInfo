@@ -32,45 +32,28 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = 11
         button.backgroundColor = .systemBlue
         
+        datePickerValueChanged(datePicker)
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for:.valueChanged)
+        button.addTarget(self, action: #selector(result), for: .touchUpInside)
+        
         view.addSubview(firstLabel)
         view.addSubview(secondLabel)
         view.addSubview(datePicker)
         view.addSubview(button)
         view.addSubview(thirdLabel)
         
-        datePickerValueChanged(datePicker)
-        
-        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for:.valueChanged)
-        button.addTarget(self, action: #selector(result), for: .touchUpInside)
-        
-        firstLabel.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(100)
-            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
-            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
-        }
-        
-        secondLabel.snp.makeConstraints{make in
-            make.top.equalTo(firstLabel.snp.top).offset(40)
-            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
-            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
-        }
-        
-        datePicker.snp.makeConstraints{make in
-            make.top.equalTo(secondLabel.snp.top).offset(40)
-            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
-            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
-        }
-        
-        button.snp.makeConstraints { make in
-            make.top.equalTo(datePicker.snp.top).offset(220)
-            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(140)
-            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-140)
-        }
-        
-        thirdLabel.snp.makeConstraints { make in
-            make.top.equalTo(button.snp.top).offset(50)
-            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(20)
-            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-20)
+        applyView(firstLabel, topOffset: 100, leadingOffset: 20, trailingOffset: -20)
+        applyView(secondLabel, topOffset: 140, leadingOffset: 20, trailingOffset: -20)
+        applyView(datePicker, topOffset: 180, leadingOffset: 20, trailingOffset: -20)
+        applyView(button, topOffset: 400, leadingOffset: 140, trailingOffset: -140)
+        applyView(thirdLabel, topOffset: 450, leadingOffset: 20, trailingOffset: -20)
+    }
+    
+    func applyView(_ element: UIView, topOffset: CGFloat, leadingOffset: CGFloat, trailingOffset: CGFloat) {
+        element.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(topOffset)
+            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(leadingOffset)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(trailingOffset)
         }
     }
     
