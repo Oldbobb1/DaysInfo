@@ -23,7 +23,7 @@ This mini-app was developed as part of the "My First Swift Apps (Updated)" cours
 
 - **Swift**: The primary programming language used for iOS development.
 - **Xcode**: The integrated development environment (IDE) used for building and testing the app.
--**SnapKit**: 
+-**SnapKit**: A popular third-party library used for Auto Layout in Swift, making it easier to define constraints programmatically.
 
 ## Goals
 
