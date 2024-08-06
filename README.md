@@ -1,6 +1,6 @@
 # daysInfo
 
-This mini-app was developed as part of the "My First Swift Apps (Updated)" course on swiftbook.org. While the course demonstrated how to create an app using storyboard, I chose to build this app entirely with code, avoiding the use of storyboard for a more programmatic approach.
+This mini-app was developed as part of the "My First Swift Apps (Updated)" course on [swiftbook.org](https://swiftbook.org). While the course demonstrated how to create an app using storyboard, I chose to build this app entirely with code, avoiding the use of storyboard for a more programmatic approach.
 
 
 
