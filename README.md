@@ -2,7 +2,11 @@
 
 This mini-app was developed as part of the "My First Swift Apps (Updated)" course on swiftbook.org. While the course demonstrated how to create an app using storyboard, I chose to build this app entirely with code, avoiding the use of storyboard for a more programmatic approach.
 
-![App Demo]https://imgur.com/hIhtL0b)
+
+
+https://github.com/user-attachments/assets/7797fb1e-af0d-4127-9073-8e5d932ca35d
+
+
 
 ## Features
 
