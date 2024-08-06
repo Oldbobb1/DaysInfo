@@ -5,7 +5,9 @@ This mini-app was developed as part of the "My First Swift Apps (Updated)" cours
 
 
 
-![App Demo](https://github.com/user-attachments/assets/b6ee0b7a-6f06-43a0-bfb6-e0a3be115e5e)
+![App Demo](https://github.com/user-attachments/assets/0bc70a89-6320-4cc1-9b19-d3cfe95a010f)
+
+
 
 
 
