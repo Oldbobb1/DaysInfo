@@ -2,7 +2,7 @@
 
 This mini-app was developed as part of the "My First Swift Apps (Updated)" course on swiftbook.org. While the course demonstrated how to create an app using storyboard, I chose to build this app entirely with code, avoiding the use of storyboard for a more programmatic approach.
 
-![App Demo](daysInfo.gif)
+![App Demo](https://imgur.com/a/IhxOGpy)
 
 ## Features
 
