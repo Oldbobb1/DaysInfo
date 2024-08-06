@@ -4,7 +4,7 @@ This mini-app was developed as part of the "My First Swift Apps (Updated)" cours
 
 
 
-https://github.com/user-attachments/assets/7797fb1e-af0d-4127-9073-8e5d932ca35d
+![App Demo](https://github.com/user-attachments/assets/7797fb1e-af0d-4127-9073-8e5d932ca35d)
 
 
 
