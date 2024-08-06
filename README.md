@@ -22,7 +22,7 @@ https://github.com/user-attachments/assets/6029ef63-c0ea-45d0-ac6f-b59cde9f10ef
 
 - **Swift**: The primary programming language used for iOS development.
 - **Xcode**: The integrated development environment (IDE) used for building and testing the app.
--**SnapKit**: A popular third-party library used for Auto Layout in Swift, making it easier to define constraints programmatically.
+- **SnapKit**: A popular third-party library used for Auto Layout in Swift, making it easier to define constraints programmatically.
 
 ## Goals
 
