@@ -4,7 +4,9 @@ This mini-app was developed as part of the "My First Swift Apps (Updated)" cours
 
 
 
-![App Demo](https://github.com/user-attachments/assets/7797fb1e-af0d-4127-9073-8e5d932ca35d)
+
+![daysInfo](https://github.com/user-attachments/assets/b6ee0b7a-6f06-43a0-bfb6-e0a3be115e5e)
+
 
 
 
