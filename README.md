@@ -24,8 +24,3 @@ This allowed for a deeper understanding of the programmatic approach to creating
 * 🪄 Simple and easy to understand interface.
 * 🚀 A basis for experimentation and extensions.
 
-## 🎥 Demo
-
-Below is a demo of the app in action.
-
-![preview](https://github.com/user-attachments/assets/6029ef63-c0ea-45d0-ac6f-b59cde9f10ef)
