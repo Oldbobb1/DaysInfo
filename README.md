@@ -1,4 +1,4 @@
-# 🗓️ daysInfo 
+# 🗓️ Days Info 
 
 This mini-app was developed as part of the “My First Swift Apps (Updated)” course [swiftbook.org](https://swiftbook.org). The course demonstrates creating an app using Storyboard, however I decided to take a different route and implement the project entirely through code, without using Storyboard.
 
